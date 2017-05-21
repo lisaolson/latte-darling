@@ -17,9 +17,10 @@ var commentRoutes   = require('./routes/comments'),
     cafeRoutes      = require('./routes/cafes'),
     authRoutes      = require('./routes/auth')
 
-mongoose.connect('mongodb://localhost/coffee');
-app.set('view engine', 'ejs');
+// mongoose.connect('mongodb://localhost/coffee');
+mongoose.connect("mongodb://lisa:A13u6L!maz@ds149481.mlab.com:49481/cafes");
 
+app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'))
 app.use(methodOverride('_method'));
