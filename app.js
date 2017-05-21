@@ -17,8 +17,8 @@ var commentRoutes   = require('./routes/comments'),
     cafeRoutes      = require('./routes/cafes'),
     authRoutes      = require('./routes/auth')
 
-// mongoose.connect('mongodb://localhost/coffee');
-mongoose.connect("mongodb://lisa:A13u6L!maz@ds149481.mlab.com:49481/cafes");
+mongoose.connect(process.env.DATABASEURL);
+// mongoose.connect("mongodb://lisa:A13u6L!maz@ds149481.mlab.com:49481/cafes");
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
