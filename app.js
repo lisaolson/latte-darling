@@ -17,7 +17,7 @@ var commentRoutes   = require('./routes/comments'),
     cafeRoutes      = require('./routes/cafes'),
     authRoutes      = require('./routes/auth')
 
-var url = process.env.DATABASEURL || 'mongodb://localhost/coffee'
+var url = process.env.DATABASEURL || "mongodb://localhost/coffee";
 mongoose.connect(url);
 // mongoose.connect('mongodb://localhost/coffee');
 // mongoose.connect(process.env.DATABASEURL);
