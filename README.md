@@ -1,9 +1,6 @@
 # Latte-Darling
 Full-stack JavaScript social media site around the sharing and love of coffee and cafés around the world.
 
-### Live
-http://latte-darling.herokuapp.com/
-
 ### Tech Stack
 - MongoDB
 - HTML/CSS
